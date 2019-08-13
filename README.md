@@ -1,2 +1,2 @@
 # leetnode
-个人刷leetcode的算法及问题总结
+自己在刷leetcode中的一些总结
