@@ -1,2 +1,2 @@
 # leetnode
-自己在刷leetcode中的一些总结
+自己刷leetcode的一些总结
