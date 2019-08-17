@@ -1,0 +1,12 @@
+这个有几个新的东西需要学
+1、python class
+  class可以简单理解为一个数据类型，类似int，float等。每一个class中有attribute和method（可改变attribute的函数）。
+  class类型的object相当于int n
+  class可以被继承（如：student(human), student会继承human的attribute，同时拥有自己的learning属性），也可以被复用（可被改写某些method）
+2、self
+    就是指自己类里面的东西
+3、OrderedDict
+  https://www.geeksforgeeks.org/ordereddict-in-python/
+  Ordered dict in Python version 2.7 consumes more memory than normal dict. This is due to the underlying Doubly Linked List implementation for keeping the order. In Python 2.7 Ordered Dict is not dict subclass, it’s a specialized container from collections module.
+  Starting from Python 3.7, insertion order of Python dictionaries is guaranteed.
+  
