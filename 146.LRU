@@ -9,4 +9,6 @@
   https://www.geeksforgeeks.org/ordereddict-in-python/
   Ordered dict in Python version 2.7 consumes more memory than normal dict. This is due to the underlying Doubly Linked List implementation for keeping the order. In Python 2.7 Ordered Dict is not dict subclass, it’s a specialized container from collections module.
   Starting from Python 3.7, insertion order of Python dictionaries is guaranteed.
-  
+  它的实现来源于doubly linked list。其具体思路是，先用散列做get/put，然后用双向链表连到散列上，每次用到就move到队列最后。每次查找队列中的元素，
+就用散列表指过来，move到最后。如果满了，就pop出去，散列指空。
+  这样
