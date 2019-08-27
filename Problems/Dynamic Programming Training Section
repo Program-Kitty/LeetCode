@@ -1,1 +1,17 @@
 动态规划的基本应用场景：解决递归分治问题中可能出现的大量重复递归子例。
+思路：将所有的子问题假想地列成一张表，换递归为递推。利用已经算出来的东西来算后面的东西。
+方法：store the solution to each such subproblem in case it should reappear——以存代算
+optimal substructure: optimal solutions to a problem incorporate optimal solutions to related subproblems, 
+which we may solve independently.
+1、top-down manner
+按照原来的办法写，但是在每一步都存一下optimal的东西（array/hash table）；在做计算之前，要查看是否之前算过。
+2、bottom up manner
+i in range(n):
+  j in range(i):
+problem exhibits optimal substructure:
+  if an optimal solution to the problem contains within it optimal solutions to subproblems.
+an optimization problem must have for dynamic pro- gramming to apply is that the space of subproblems must be “small” in the sense that 
+  a recursive algorithm for the problem solves the same subproblems over and over, rather than always generating new subproblems. 
+  Typically, the total number of distinct subproblems is a polynomial in the input size. 
+  When a recursive algorithm revisits the same problem repeatedly, we say that the optimization problem has overlapping subproblems.
+  In contrast, a problem for which a divide-and- conquer approach is suitable usually generates brand-new problems at each step of the recursion.
