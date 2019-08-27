@@ -1,0 +1,49 @@
+Select all the different values from the Country column in the Customers table:
+SELECT DISTINCT Country From Customers
+
+Use the NOT keyword to select all records where City is NOT "Berlin".
+SELECT * FROM Customers
+WHERE NOT City = 'Berlin'
+
+Select all records from the Customers table, sort the result reversed alphabetically by the column City.
+SELECT * FROM Customers
+ORDER BY City DESC;
+
+order by 多个：
+SELECT * FROM Customers
+ORDER BY a, b, c; #顺序地先a，后b，再c
+
+insert 记录：
+INSERT INTO table name (col1, col2,...) VALUES (a, b, ...);
+
+Select all records from the Customers where the PostalCode column is empty.
+SELECT * FROM table
+WHERE PostalCode IS NULL;
+
+Update the City column of all records in the Customers table.
+UPDATE Customers
+SET City = 'Oslo';
+
+Delete all the records from the Customers table where the Country value is 'Norway'.
+DELETE FROM Customers
+WHERE Country = 'Norway';
+
+Use the MIN function to select the record with the smallest value of the Price column.
+SELECT MIN(Price) FROM customer;
+
+Use the correct function to return the numbers of records that have the Price value set to 18.
+SELECT COUNT (*)
+FROM Products
+WHERE Price = 18;
+
+Select all records where the value of the City column starts with the letter "a".
+SELECT * FROM Customers
+WHERE City LIKE 'a%'; 
+这里，%代表任意数目字符（0到无穷），?代表有且仅有一个，[abc]代表只有一个，这一个可以是a或b或c。
+
+
+
+
+
+
+
