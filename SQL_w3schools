@@ -39,7 +39,38 @@ WHERE Price = 18;
 Select all records where the value of the City column starts with the letter "a".
 SELECT * FROM Customers
 WHERE City LIKE 'a%'; 
-这里，%代表任意数目字符（0到无穷），?代表有且仅有一个，[abc]代表只有一个，这一个可以是a或b或c。
+这里，%代表任意数目字符（0到无穷），?代表有且仅有一个，[ads]代表只有一个，这一个可以是a或d或s。[!ads]代表只有一个，这一个不能是a或d或s。
+[a-f]代表从a到f中任意一个，包括a和f。
+
+Use the IN operator to select all the records where Country is either "Norway" or "France".
+SELECT * FROM Customers
+WHERE Country IN ('Norway', 'France');
+
+关于Alias：其实就是AS
+When displaying the Customers table, make an ALIAS of the PostalCode column, the column should be called Pno instead.
+SELECT CustomerName,
+Address,
+PostalCode AS Pno
+FROM Customers; #注意标点符号
+
+JOIN：
+用ON
+
+Write the correct SQL statement to create a new database called testDB.
+创建数据库：CREATE DATABASE testDB;
+删除数据库：
+DROP DATABASE testDB;
+创建table: CREATE TABLE Persons
+删除table所有数据：TRUNCATE TABLE
+
+Add a column of type DATE called Birthday.
+
+ALTER TABLE Persons
+ADD Birthday DATE;
+
+
+
+
 
 
 
