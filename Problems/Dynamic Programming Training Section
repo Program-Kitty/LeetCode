@@ -15,3 +15,6 @@ an optimization problem must have for dynamic pro- gramming to apply is that the
   Typically, the total number of distinct subproblems is a polynomial in the input size. 
   When a recursive algorithm revisits the same problem repeatedly, we say that the optimization problem has overlapping subproblems.
   In contrast, a problem for which a divide-and- conquer approach is suitable usually generates brand-new problems at each step of the recursion.
+
+例题：
+5. Longest Palindromic Substring
